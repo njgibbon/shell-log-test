@@ -1,14 +1,5 @@
 #!/bin/bash
 
-#cat ../log.txt | grep -n "003" | head -n 1 | cut -d: -f1
-
-#cat ../log.txt | head -n 19 | grep -n "START LOG TYPE" | tail -n 1 | cut -d: -f1
-
-#cat ../log.txt | tail -n +18 | grep -n "END LOG TYPE" | head -n +1 | cut -d: -f1
-
-#var=$(cat ../log.txt | tail -n +18 | head -n +6)
-
-
 #Test Suite Execution Function
 function runner
 {
@@ -129,3 +120,10 @@ results #result function
 
 #Logic
 
+#cat ../log.txt | grep -n "003" | head -n 1 | cut -d: -f1
+
+#cat ../log.txt | head -n 19 | grep -n "START LOG TYPE" | tail -n 1 | cut -d: -f1
+
+#cat ../log.txt | tail -n +18 | grep -n "END LOG TYPE" | head -n +1 | cut -d: -f1
+
+#var=$(cat ../log.txt | tail -n +18 | head -n +6)

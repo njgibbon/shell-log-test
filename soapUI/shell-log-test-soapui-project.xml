@@ -1,41 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="04525a03-6f0d-4259-a388-37cff6bd3da5" activeEnvironment="Default" name="shell-log-test" resourceRoot="" defaultScriptLanguage="Groovy" soapui-version="5.4.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:testSuite id="e19caf1f-1fdf-47f7-b49f-83fe93992840" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="5e713304-ed94-48bf-b7b9-44cdff05a0c0" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script" id="87b67fc4-587c-45e5-ac7f-81133975f79b"><con:settings/><con:config><script>def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+<con:soapui-project id="04525a03-6f0d-4259-a388-37cff6bd3da5" activeEnvironment="Default" name="shell-log-test" resourceRoot="" defaultScriptLanguage="Groovy" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:testSuite id="e19caf1f-1fdf-47f7-b49f-83fe93992840" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="5e713304-ed94-48bf-b7b9-44cdff05a0c0" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:testStep type="groovy" name="GroovyScript1" id="057fecba-1719-4954-a366-e3b28ef29437"><con:settings/><con:config><script>//find the project directory so we can path relaitvely
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
 def projectDir = groovyUtils.projectPath
+
+//log where we are
+log.info( "Test 1 - Assertion Against Log")
 log.info(projectDir)
-log.info( "hello")
 
-//def defaultPathBase = new File( "." ).getCanonicalPath()
-//log.info( "Current dir:" + defaultPathBase )
-
-//def directory = ${projectDir}
-
-//info.log (${projectDir})
+//Set Up
 def result = ""
+def assertAgainstLogCmd;
+def p;
+def pExitValue;
 
-//p = Runtime.getRuntime().exec(projectDir + "/main.sh")
-//proc.waitFor()
+//prepare statement to execute
+assertAgainstLogCmd = [projectDir+'/assertAgainstLog.sh', "SUCCESS", projectDir]
 
-//def dir = new File( 'potato' )
+log.info (assertAgainstLogCmd)
 
-//def command = [projectDir+'/main.sh']
+//execute statement
+p = assertAgainstLogCmd.execute()
+p.waitForOrKill(10000)
 
-//def command = "echo 'hello world'"
-//def proc = "ls".execute()
-//proc.waitFor()
-//proc.consumeProcessOutput(sout, serr)
-//proc.waitForOrKill(5000)
-//result = proc.in.text //save the podname as a result
-//println proc.err.text //output errors
-//usablePodName = usablePodName.trim() //trim
-//println result //print name
+//clear up
+pExitValue = p.exitValue();
+log.info(pExitValue);
+log.info (p.in.text)
+log.info (p.err.text)
 
-//def p0 = kubeGetPodsCmd.execute() | grepPodLogNameCmd.execute() | ['awk', '{ print $1 }'].execute()
-//p0.waitFor()
+//assert
+assert pExitValue == 0
+</script></con:config></con:testStep><con:testStep type="groovy" name="GroovyScript2" id="87b67fc4-587c-45e5-ac7f-81133975f79b"><con:settings/><con:config><script>//find the project directory so we can path relaitvely
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
 
-def newCmd = [projectDir+'/main.sh']
-log.info (newCmd)
-def p0 = newCmd.execute()
-p0.waitForOrKill(10000)
-log.info (p0.in.text)
-log.info (p0.err.text)
+//log where we are
+log.info( "Test 1 - Assertion Against Log")
+log.info(projectDir)
+
+//Set Up
+def result = ""
+def assertAgainstLogCmd;
+def p;
+def pExitValue;
+
+//prepare statement to execute
+assertAgainstLogCmd = [projectDir+'/assertAgainstLog.sh', "SUCCESS", projectDir]
+
+log.info (assertAgainstLogCmd)
+
+//execute statement
+p = assertAgainstLogCmd.execute()
+p.waitForOrKill(10000)
+
+//clear up
+pExitValue = p.exitValue();
+log.info(pExitValue);
+log.info (p.in.text)
+log.info (p.err.text)
+
+//assert
+assert pExitValue == 0
 </script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
