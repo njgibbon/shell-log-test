@@ -13,6 +13,7 @@ public class TestSuite1
         System.out.println("test1");
         boolean testResult = false;
         ShellLogTest slt = new ShellLogTest();
+        slt.extractLog("001");
         testResult = slt.assertAgainstLog("SUCCESS");
         assertTrue(testResult);
     }
@@ -24,6 +25,7 @@ public class TestSuite1
         System.out.println("test2");
         boolean testResult = false;
         ShellLogTest slt = new ShellLogTest();
+        slt.extractLog("002");
         testResult = slt.assertAgainstLog("SUCCESS");
         assertTrue(testResult);
     }
@@ -34,6 +36,7 @@ public class TestSuite1
         System.out.println("test3");
         boolean testResult = false;
         ShellLogTest slt = new ShellLogTest();
+        slt.extractLog("003");
         testResult = slt.assertAgainstLog("SUCCESS");
         assertTrue(testResult);
     }
@@ -44,6 +47,7 @@ public class TestSuite1
         System.out.println("test4");
         boolean testResult = false;
         ShellLogTest slt = new ShellLogTest();
+        slt.extractLog("004");
         testResult = slt.assertAgainstLog("SUCCESS");
         assertTrue(testResult);
     }
@@ -54,6 +58,7 @@ public class TestSuite1
         System.out.println("test5");
         boolean testResult = false;
         ShellLogTest slt = new ShellLogTest();
+        slt.extractLog("005");
         testResult = slt.assertAgainstLog("SUCCESS");
         assertTrue(testResult);
     }

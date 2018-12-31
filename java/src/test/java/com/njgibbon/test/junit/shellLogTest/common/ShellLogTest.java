@@ -6,10 +6,28 @@ import java.io.InputStreamReader;
 public class ShellLogTest
 {
 
-    public void extractLog()
+    public void extractLog(String id) throws Exception
     {
+        Process p;
+        StringBuffer sb;
+        String line;
+        BufferedReader reader;
+        ProcessBuilder pb;
 
+        //part2
+        pb = new ProcessBuilder("./extractLog.sh", id);
+        p = pb.start();
+        p.waitFor();
 
+        reader = new BufferedReader(new InputStreamReader(p.getInputStream()));
+
+        line = "";
+        sb = new StringBuffer();
+        while ((line = reader.readLine())!= null) {
+            sb.append(line + "\n");
+        }
+
+        System.out.println(sb.toString());
     }
 
     public boolean assertAgainstLog(String stringToMatch) throws Exception

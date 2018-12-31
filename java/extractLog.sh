@@ -1,60 +1,8 @@
 #!/bin/bash
-#source ./second.sh
 
-#cat ../log.txt | grep -n "ID 003" | head -n 1 | cut -d: -f1
-
-#cat ../log.txt | head -n 19 | grep -n "START LOG TYPE" | tail -n 1 | cut -d: -f1
-
-#cat ../log.txt | tail -n +18 | grep -n "END LOG TYPE" | head -n +1 | cut -d: -f1
-
-#var=$(cat ../log.txt | tail -n +18 | head -n +6)
-
-#echo $var
-function runner
-{
-    case1
-    case2
-    case3
-    case4
-    case5
-}
-
-function case1
-{
-    echo "Test Case 1"
-    obtainTargetLogExtract "ID 001"
-    checkTargetLogExtract "RESULT SUCCESS"
-    
-}
-
-function case2
-{
-    echo "Test Case 2"
-    obtainTargetLogExtract "ID 002"
-    checkTargetLogExtract "RESULT SUCCESS"
-}
-
-function case3
-{
-    echo "Test Case 3"
-    obtainTargetLogExtract "ID 003"
-    checkTargetLogExtract "RESULT SUCCESS"
-}
-
-function case4
-{
-    echo "Test Case 4"
-    obtainTargetLogExtract "ID 004"
-    checkTargetLogExtract "RESULT SUCCESS"
-}
-
-function case5
-{
-    echo "Test Case 5"
-    obtainTargetLogExtract "ID 005"
-    checkTargetLogExtract "RESULT SUCCESS"
-}
-
+#function to obtain the section of the log we want in an automated fashion following the logic described
+#Params: id = unique id to search for in the log
+#Output: log extract saved to temporary file temp/logExtract.txt (overwritten per function call)
 function obtainTargetLogExtract
 {
     id=$1
@@ -78,23 +26,7 @@ function obtainTargetLogExtract
     echo ""
 }
 
-function checkTargetLogExtract
-{
-    stringToMatch=$1
-
-    stringMatchNumber=$(cat temp/logExtract.txt | grep -n "$stringToMatch" | wc -l)
-    echo "string matches = " $stringMatchNumber
-    if [ $stringMatchNumber -eq 0 ]
-    then
-        echo "TEST FAILED"
-        let "globalTestsFailed++"
-    fi
-
-}
-
-#Set Up Vars
-
-globalTests=5
-globalTestsFailed=0
-runner
-echo $globalTestsFailed
+#SetUp
+id=$1 #argument passed in keyword to search for
+echo "id to get extract "$id
+obtainTargetLogExtract $id

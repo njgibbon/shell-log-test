@@ -120,10 +120,42 @@ results #result function
 
 #Logic
 
-#cat ../log.txt | grep -n "003" | head -n 1 | cut -d: -f1
+#In our example input each log transaction is delimited by a "START LOG TYPE" and "END LOG TYPE". And identified by a unique ID number.
+#Within the log extract various events are recorded.
+#We want to run a test against each transaction recorded in the log. 
+#We want to separate the transaction from the rest of the log and then assert against the "SUCCESS" keyword. 
+#We assume that there could be any number of events output between the delimiting statements.
 
-#cat ../log.txt | head -n 19 | grep -n "START LOG TYPE" | tail -n 1 | cut -d: -f1
+#Given we know what we want from the problem statement. First we go through the process we want to automate with manual shell commands. 
 
-#cat ../log.txt | tail -n +18 | grep -n "END LOG TYPE" | head -n +1 | cut -d: -f1
+#1 Given the ID, take the log extract and save to a temporary file. 
 
-#var=$(cat ../log.txt | tail -n +18 | head -n +6)
+#Find the line number of the ID
+#cat log.txt | grep -n "001" | head -n 1 | cut -d: -f1
+#3
+
+#Find the line number of the start of the log extract. Cut the log at the ID. Then return the line number of the last instance of "START LOG TYPE".
+#cat log.txt | head -n 3 | grep -n "START LOG TYPE" | tail -n 1 | cut -d: -f1
+#2
+
+#Find the line number of the end of the log extract. Cut the top of the log at the start line. Then return the first instance of "END LOG TYPE".
+#cat log.txt | tail -n +2 | grep -n "END LOG TYPE" | head -n +1 | cut -d: -f1
+#7
+
+#Cut the log between the start and end lines and save this to a file. 
+#cat log.txt | tail -n +2 | head -n +7 > logExtract.txt
+#cat logExtract.txt
+#START LOG TYPE
+#ID 001
+#EVENT A
+#EVENT B
+#EVENT C
+#RESULT SUCCESS
+#END LOG TYPE
+
+
+#2 Now, Search for the "SUCCESS" keyword against the extract. Output number. If 0 then test failed. 
+#cat logExtract.txt | grep -n "SUCCESS" | wc -l
+#1
+
+#This logic now just needs to be automated. See (this) main.sh for the solution. 

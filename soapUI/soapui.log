@@ -1,0 +1,370 @@
+2018-12-31 00:11:24,099 WARN  [SoapUI] Missing folder [/Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/ext] for external libraries
+2018-12-31 00:11:24,331 INFO  [DefaultSoapUICore] initialized soapui-settings from [/Users/nicholas.j.gibbon/soapui-settings.xml]
+2018-12-31 00:11:25,562 INFO  [PluginManager] Adding plugin from [/Users/nicholas.j.gibbon/.soapuios/plugins/ready-mqtt-plugin-dist.jar]
+2018-12-31 00:11:25,562 INFO  [PluginManager] Adding plugin from [/Users/nicholas.j.gibbon/.soapuios/plugins/soapui-swagger-plugin-2.2-dist.jar]
+2018-12-31 00:11:26,754 WARN  [PluginManager] Could not load plugin from file [/Users/nicholas.j.gibbon/.soapuios/plugins/ready-mqtt-plugin-dist.jar]
+com.eviware.soapui.plugins.InvalidPluginException: Error loading plugin class com.smartbear.mqttsupport.PluginConfig
+	at com.eviware.soapui.plugins.PluginLoader.loadPlugin(PluginLoader.java:114)
+	at com.eviware.soapui.plugins.PluginLoader.loadPlugin(PluginLoader.java:54)
+	at com.eviware.soapui.plugins.PluginManager.doInstallPlugin(PluginManager.java:141)
+	at com.eviware.soapui.plugins.PluginManager.access$600(PluginManager.java:43)
+	at com.eviware.soapui.plugins.PluginManager$LoadPluginsTask.computeSequentially(PluginManager.java:420)
+	at com.eviware.soapui.plugins.PluginManager$LoadPluginsTask.compute(PluginManager.java:377)
+	at com.eviware.soapui.plugins.PluginManager$LoadPluginsTask.compute(PluginManager.java:382)
+	at com.eviware.soapui.plugins.PluginManager$LoadPluginsTask.compute(PluginManager.java:365)
+	at java.base/java.util.concurrent.RecursiveTask.exec(RecursiveTask.java:94)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1603)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+Caused by: org.reflections.ReflectionsException: could not get type for name com.eviware.soapui.plugins.auto.PluginSubReport
+	at org.reflections.ReflectionUtils.forName(ReflectionUtils.java:378)
+	at org.reflections.ReflectionUtils.forNames(ReflectionUtils.java:387)
+	at org.reflections.Reflections.getTypesAnnotatedWith(Reflections.java:351)
+	at com.eviware.soapui.plugins.LoaderBase.loadAutoFactories(LoaderBase.java:108)
+	at com.eviware.soapui.plugins.LoaderBase.loadFactories(LoaderBase.java:80)
+	at com.eviware.soapui.plugins.PluginLoader.loadPluginFactories(PluginLoader.java:141)
+	at com.eviware.soapui.plugins.PluginLoader.loadPlugin(PluginLoader.java:104)
+	... 11 more
+2018-12-31 00:11:26,756 INFO  [PluginManager] Adding plugin from [/Users/nicholas.j.gibbon/.soapuios/plugins/ready-uxm-plugin-1.0.1-dist.jar]
+2018-12-31 00:11:26,842 WARN  [PluginManager] Could not load plugin from file [/Users/nicholas.j.gibbon/.soapuios/plugins/soapui-swagger-plugin-2.2-dist.jar]
+com.eviware.soapui.plugins.InvalidPluginException: Error loading plugin class com.smartbear.swagger.PluginConfig
+	at com.eviware.soapui.plugins.PluginLoader.loadPlugin(PluginLoader.java:114)
+	at com.eviware.soapui.plugins.PluginLoader.loadPlugin(PluginLoader.java:54)
+	at com.eviware.soapui.plugins.PluginManager.doInstallPlugin(PluginManager.java:141)
+	at com.eviware.soapui.plugins.PluginManager.access$600(PluginManager.java:43)
+	at com.eviware.soapui.plugins.PluginManager$LoadPluginsTask.computeSequentially(PluginManager.java:420)
+	at com.eviware.soapui.plugins.PluginManager$LoadPluginsTask.compute(PluginManager.java:377)
+	at com.eviware.soapui.plugins.PluginManager$LoadPluginsTask.compute(PluginManager.java:365)
+	at java.base/java.util.concurrent.RecursiveTask.exec(RecursiveTask.java:94)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1603)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+Caused by: org.reflections.ReflectionsException: could not get type for name com.eviware.soapui.plugins.auto.PluginSubReport
+	at org.reflections.ReflectionUtils.forName(ReflectionUtils.java:378)
+	at org.reflections.ReflectionUtils.forNames(ReflectionUtils.java:387)
+	at org.reflections.Reflections.getTypesAnnotatedWith(Reflections.java:351)
+	at com.eviware.soapui.plugins.LoaderBase.loadAutoFactories(LoaderBase.java:108)
+	at com.eviware.soapui.plugins.LoaderBase.loadFactories(LoaderBase.java:80)
+	at com.eviware.soapui.plugins.PluginLoader.loadPluginFactories(PluginLoader.java:141)
+	at com.eviware.soapui.plugins.PluginLoader.loadPlugin(PluginLoader.java:104)
+	... 10 more
+2018-12-31 00:11:26,843 INFO  [PluginManager] Adding plugin from [/Users/nicholas.j.gibbon/.soapuios/plugins/readyapi-postman-1.0.1.jar]
+2018-12-31 00:11:27,201 WARN  [PluginManager] Could not load plugin from file [/Users/nicholas.j.gibbon/.soapuios/plugins/readyapi-postman-1.0.1.jar]
+com.eviware.soapui.plugins.InvalidPluginException: Error loading plugin class com.smartbear.postman.PluginConfig
+	at com.eviware.soapui.plugins.PluginLoader.loadPlugin(PluginLoader.java:114)
+	at com.eviware.soapui.plugins.PluginLoader.loadPlugin(PluginLoader.java:54)
+	at com.eviware.soapui.plugins.PluginManager.doInstallPlugin(PluginManager.java:141)
+	at com.eviware.soapui.plugins.PluginManager.access$600(PluginManager.java:43)
+	at com.eviware.soapui.plugins.PluginManager$LoadPluginsTask.computeSequentially(PluginManager.java:420)
+	at com.eviware.soapui.plugins.PluginManager$LoadPluginsTask.compute(PluginManager.java:377)
+	at com.eviware.soapui.plugins.PluginManager$LoadPluginsTask.compute(PluginManager.java:365)
+	at java.base/java.util.concurrent.RecursiveTask.exec(RecursiveTask.java:94)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1603)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+Caused by: org.reflections.ReflectionsException: could not get type for name com.eviware.soapui.plugins.auto.PluginSubReport
+	at org.reflections.ReflectionUtils.forName(ReflectionUtils.java:378)
+	at org.reflections.ReflectionUtils.forNames(ReflectionUtils.java:387)
+	at org.reflections.Reflections.getTypesAnnotatedWith(Reflections.java:351)
+	at com.eviware.soapui.plugins.LoaderBase.loadAutoFactories(LoaderBase.java:108)
+	at com.eviware.soapui.plugins.LoaderBase.loadFactories(LoaderBase.java:80)
+	at com.eviware.soapui.plugins.PluginLoader.loadPluginFactories(PluginLoader.java:141)
+	at com.eviware.soapui.plugins.PluginLoader.loadPlugin(PluginLoader.java:104)
+	... 10 more
+2018-12-31 00:11:27,246 WARN  [PluginManager] Could not load plugin from file [/Users/nicholas.j.gibbon/.soapuios/plugins/ready-uxm-plugin-1.0.1-dist.jar]
+com.eviware.soapui.plugins.InvalidPluginException: Error loading plugin class com.smartbear.ready.PluginConfig
+	at com.eviware.soapui.plugins.PluginLoader.loadPlugin(PluginLoader.java:114)
+	at com.eviware.soapui.plugins.PluginLoader.loadPlugin(PluginLoader.java:54)
+	at com.eviware.soapui.plugins.PluginManager.doInstallPlugin(PluginManager.java:141)
+	at com.eviware.soapui.plugins.PluginManager.access$600(PluginManager.java:43)
+	at com.eviware.soapui.plugins.PluginManager$LoadPluginsTask.computeSequentially(PluginManager.java:420)
+	at com.eviware.soapui.plugins.PluginManager$LoadPluginsTask.compute(PluginManager.java:377)
+	at com.eviware.soapui.plugins.PluginManager$LoadPluginsTask.compute(PluginManager.java:382)
+	at com.eviware.soapui.plugins.PluginManager$LoadPluginsTask.compute(PluginManager.java:365)
+	at java.base/java.util.concurrent.RecursiveTask.exec(RecursiveTask.java:94)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1603)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+Caused by: org.reflections.ReflectionsException: could not get type for name com.eviware.soapui.plugins.auto.PluginSubReport
+	at org.reflections.ReflectionUtils.forName(ReflectionUtils.java:378)
+	at org.reflections.ReflectionUtils.forNames(ReflectionUtils.java:387)
+	at org.reflections.Reflections.getTypesAnnotatedWith(Reflections.java:351)
+	at com.eviware.soapui.plugins.LoaderBase.loadAutoFactories(LoaderBase.java:108)
+	at com.eviware.soapui.plugins.LoaderBase.loadFactories(LoaderBase.java:80)
+	at com.eviware.soapui.plugins.PluginLoader.loadPluginFactories(PluginLoader.java:141)
+	at com.eviware.soapui.plugins.PluginLoader.loadPlugin(PluginLoader.java:104)
+	... 11 more
+2018-12-31 00:11:27,247 INFO  [PluginManager] Adding plugin from [/Users/nicholas.j.gibbon/.soapuios/plugins/readyapi-swaggerhub-plugin-1.0.jar]
+2018-12-31 00:11:27,544 WARN  [PluginManager] Could not load plugin from file [/Users/nicholas.j.gibbon/.soapuios/plugins/readyapi-swaggerhub-plugin-1.0.jar]
+com.eviware.soapui.plugins.InvalidPluginException: Error loading plugin class com.smartbear.plugins.swaggerhub.PluginConfig
+	at com.eviware.soapui.plugins.PluginLoader.loadPlugin(PluginLoader.java:114)
+	at com.eviware.soapui.plugins.PluginLoader.loadPlugin(PluginLoader.java:54)
+	at com.eviware.soapui.plugins.PluginManager.doInstallPlugin(PluginManager.java:141)
+	at com.eviware.soapui.plugins.PluginManager.access$600(PluginManager.java:43)
+	at com.eviware.soapui.plugins.PluginManager$LoadPluginsTask.computeSequentially(PluginManager.java:420)
+	at com.eviware.soapui.plugins.PluginManager$LoadPluginsTask.compute(PluginManager.java:377)
+	at com.eviware.soapui.plugins.PluginManager$LoadPluginsTask.compute(PluginManager.java:382)
+	at com.eviware.soapui.plugins.PluginManager$LoadPluginsTask.compute(PluginManager.java:365)
+	at java.base/java.util.concurrent.RecursiveTask.exec(RecursiveTask.java:94)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1603)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+Caused by: org.reflections.ReflectionsException: could not get type for name com.eviware.soapui.plugins.auto.PluginSubReport
+	at org.reflections.ReflectionUtils.forName(ReflectionUtils.java:378)
+	at org.reflections.ReflectionUtils.forNames(ReflectionUtils.java:387)
+	at org.reflections.Reflections.getTypesAnnotatedWith(Reflections.java:351)
+	at com.eviware.soapui.plugins.LoaderBase.loadAutoFactories(LoaderBase.java:108)
+	at com.eviware.soapui.plugins.LoaderBase.loadFactories(LoaderBase.java:80)
+	at com.eviware.soapui.plugins.PluginLoader.loadPluginFactories(PluginLoader.java:141)
+	at com.eviware.soapui.plugins.PluginLoader.loadPlugin(PluginLoader.java:104)
+	... 11 more
+2018-12-31 00:11:27,545 INFO  [PluginManager] 5 plugins loaded in 1985 ms
+2018-12-31 00:11:27,545 INFO  [DefaultSoapUICore] All plugins loaded
+2018-12-31 00:11:28,208 INFO  [WsdlProject] Loaded project from [file:/Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/shell-log-test-soapui-project.xml]
+2018-12-31 00:11:28,216 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [shell-log-test]
+2018-12-31 00:11:28,217 INFO  [SoapUITestCaseRunner] Running Project [shell-log-test], runType = SEQUENTIAL
+2018-12-31 00:11:28,227 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TestCase 1]
+2018-12-31 00:11:28,239 INFO  [SoapUITestCaseRunner] running step [GroovyScript1]
+2018-12-31 00:11:28,552 INFO  [log] Test 1 - Log Extraction
+2018-12-31 00:11:28,552 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI
+2018-12-31 00:11:28,558 INFO  [log] [/Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/extractLog.sh, 001, /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI]
+2018-12-31 00:11:28,626 INFO  [log] id to get extract 001
+ID Line Number is:  3
+
+Start Line Number is:  2
+
+End Line Number is:  7
+This is the number of lines after the Start line number.
+
+Log Extract is: 
+START LOG TYPE
+ID 001
+EVENT A
+EVENT B
+EVENT C
+RESULT SUCCESS
+END LOG TYPE
+
+
+2018-12-31 00:11:28,627 INFO  [log] 
+2018-12-31 00:11:28,633 INFO  [SoapUITestCaseRunner] running step [GroovyScript2]
+2018-12-31 00:11:28,654 INFO  [log] Test 1 - Assertion Against Log
+2018-12-31 00:11:28,654 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI
+2018-12-31 00:11:28,654 INFO  [log] [/Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/assertAgainstLog.sh, SUCCESS, /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI]
+2018-12-31 00:11:28,675 INFO  [log] 0
+2018-12-31 00:11:28,675 INFO  [log] String to search for SUCCESS
+string matches =  1
+1
+
+2018-12-31 00:11:28,676 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/assertAgainstLog.sh: line 13: 1: command not found
+
+2018-12-31 00:11:28,680 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TestCase 1], time taken: 429ms, status: FINISHED
+2018-12-31 00:11:28,684 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TestCase 2]
+2018-12-31 00:11:28,684 INFO  [SoapUITestCaseRunner] running step [GroovyScript1]
+2018-12-31 00:11:28,707 INFO  [log] Test 1 - Log Extraction
+2018-12-31 00:11:28,708 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI
+2018-12-31 00:11:28,709 INFO  [log] [/Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/extractLog.sh, 002, /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI]
+2018-12-31 00:11:28,763 INFO  [log] id to get extract 002
+ID Line Number is:  11
+
+Start Line Number is:  10
+
+End Line Number is:  7
+This is the number of lines after the Start line number.
+
+Log Extract is: 
+START LOG TYPE
+ID 002
+EVENT A
+EVENT B
+EVENT C
+RESULT SUCCESS
+END LOG TYPE
+
+
+2018-12-31 00:11:28,764 INFO  [log] 
+2018-12-31 00:11:28,764 INFO  [SoapUITestCaseRunner] running step [GroovyScript2]
+2018-12-31 00:11:28,781 INFO  [log] Test 1 - Assertion Against Log
+2018-12-31 00:11:28,781 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI
+2018-12-31 00:11:28,781 INFO  [log] [/Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/assertAgainstLog.sh, SUCCESS, /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI]
+2018-12-31 00:11:28,799 INFO  [log] 0
+2018-12-31 00:11:28,799 INFO  [log] String to search for SUCCESS
+string matches =  1
+1
+
+2018-12-31 00:11:28,800 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/assertAgainstLog.sh: line 13: 1: command not found
+
+2018-12-31 00:11:28,800 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TestCase 2], time taken: 114ms, status: FINISHED
+2018-12-31 00:11:28,801 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TestCase 3]
+2018-12-31 00:11:28,801 INFO  [SoapUITestCaseRunner] running step [GroovyScript1]
+2018-12-31 00:11:28,818 INFO  [log] Test 1 - Log Extraction
+2018-12-31 00:11:28,818 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI
+2018-12-31 00:11:28,818 INFO  [log] [/Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/extractLog.sh, 004, /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI]
+2018-12-31 00:11:28,868 INFO  [log] id to get extract 004
+ID Line Number is:  26
+
+Start Line Number is:  25
+
+End Line Number is:  7
+This is the number of lines after the Start line number.
+
+Log Extract is: 
+START LOG TYPE
+ID 004
+EVENT A
+EVENT B
+VALIDATION ERROR
+RESULT FAILURE
+END LOG TYPE
+
+
+2018-12-31 00:11:28,868 INFO  [log] 
+2018-12-31 00:11:28,868 INFO  [SoapUITestCaseRunner] running step [GroovyScript2]
+2018-12-31 00:11:28,888 INFO  [log] Test 1 - Assertion Against Log
+2018-12-31 00:11:28,888 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI
+2018-12-31 00:11:28,888 INFO  [log] [/Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/assertAgainstLog.sh, SUCCESS, /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI]
+2018-12-31 00:11:28,910 INFO  [log] 1
+2018-12-31 00:11:28,910 INFO  [log] String to search for SUCCESS
+string matches =  0
+0
+TEST FAILED
+
+2018-12-31 00:11:28,910 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/assertAgainstLog.sh: line 13: 0: command not found
+
+2018-12-31 00:11:28,914 ERROR [SoapUI] An error occurred [assert pExitValue == 0
+       |          |
+       1          false], see error log for details
+2018-12-31 00:11:28,914 ERROR [errorlog] Assertion failed: 
+
+assert pExitValue == 0
+       |          |
+       1          false
+
+Assertion failed: 
+
+assert pExitValue == 0
+       |          |
+       1          false
+
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:402)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:650)
+	at Script1.run(Script1.groovy:31)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:90)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:141)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-12-31 00:11:28,920 ERROR [SoapUITestCaseRunner] GroovyScript2 failed, exporting to [/Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/target/reports/TestSuite_1-TestCase_3-GroovyScript2-0-FAILED.txt]
+2018-12-31 00:11:28,927 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TestCase 3], time taken: 118ms, status: FAILED
+2018-12-31 00:11:28,929 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TestCase 4]
+2018-12-31 00:11:28,929 INFO  [SoapUITestCaseRunner] running step [GroovyScript1]
+2018-12-31 00:11:28,947 INFO  [log] Test 1 - Log Extraction
+2018-12-31 00:11:28,948 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI
+2018-12-31 00:11:28,948 INFO  [log] [/Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/extractLog.sh, 004, /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI]
+2018-12-31 00:11:28,990 INFO  [log] id to get extract 004
+ID Line Number is:  26
+
+Start Line Number is:  25
+
+End Line Number is:  7
+This is the number of lines after the Start line number.
+
+Log Extract is: 
+START LOG TYPE
+ID 004
+EVENT A
+EVENT B
+VALIDATION ERROR
+RESULT FAILURE
+END LOG TYPE
+
+
+2018-12-31 00:11:28,990 INFO  [log] 
+2018-12-31 00:11:28,990 INFO  [SoapUITestCaseRunner] running step [GroovyScript2]
+2018-12-31 00:11:29,004 INFO  [log] Test 1 - Assertion Against Log
+2018-12-31 00:11:29,005 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI
+2018-12-31 00:11:29,005 INFO  [log] [/Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/assertAgainstLog.sh, SUCCESS, /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI]
+2018-12-31 00:11:29,027 INFO  [log] 1
+2018-12-31 00:11:29,028 INFO  [log] String to search for SUCCESS
+string matches =  0
+0
+TEST FAILED
+
+2018-12-31 00:11:29,028 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/assertAgainstLog.sh: line 13: 0: command not found
+
+2018-12-31 00:11:29,029 ERROR [SoapUI] An error occurred [assert pExitValue == 0
+       |          |
+       1          false], see error log for details
+2018-12-31 00:11:29,029 ERROR [errorlog] Assertion failed: 
+
+assert pExitValue == 0
+       |          |
+       1          false
+
+Assertion failed: 
+
+assert pExitValue == 0
+       |          |
+       1          false
+
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:402)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:650)
+	at Script1.run(Script1.groovy:31)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:90)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:141)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-12-31 00:11:29,036 ERROR [SoapUITestCaseRunner] GroovyScript2 failed, exporting to [/Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/target/reports/TestSuite_1-TestCase_4-GroovyScript2-0-FAILED.txt]
+2018-12-31 00:11:29,038 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TestCase 4], time taken: 105ms, status: FAILED
+2018-12-31 00:11:29,039 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TestCase 5]
+2018-12-31 00:11:29,039 INFO  [SoapUITestCaseRunner] running step [GroovyScript1]
+2018-12-31 00:11:29,052 INFO  [log] Test 1 - Log Extraction
+2018-12-31 00:11:29,052 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI
+2018-12-31 00:11:29,052 INFO  [log] [/Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/extractLog.sh, 005, /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI]
+2018-12-31 00:11:29,093 INFO  [log] id to get extract 005
+ID Line Number is:  34
+
+Start Line Number is:  33
+
+End Line Number is:  7
+This is the number of lines after the Start line number.
+
+Log Extract is: 
+START LOG TYPE
+ID 005
+EVENT A
+EVENT B
+EVENT C
+RESULT SUCCESS
+END LOG TYPE
+
+
+2018-12-31 00:11:29,094 INFO  [log] 
+2018-12-31 00:11:29,094 INFO  [SoapUITestCaseRunner] running step [GroovyScript2]
+2018-12-31 00:11:29,113 INFO  [log] Test 1 - Assertion Against Log
+2018-12-31 00:11:29,113 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI
+2018-12-31 00:11:29,113 INFO  [log] [/Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/assertAgainstLog.sh, SUCCESS, /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI]
+2018-12-31 00:11:29,130 INFO  [log] 0
+2018-12-31 00:11:29,131 INFO  [log] String to search for SUCCESS
+string matches =  1
+1
+
+2018-12-31 00:11:29,131 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/assertAgainstLog.sh: line 13: 1: command not found
+
+2018-12-31 00:11:29,131 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TestCase 5], time taken: 91ms, status: FINISHED
+2018-12-31 00:11:29,132 INFO  [SoapUITestCaseRunner] Project [shell-log-test] finished with status [FAILED] in 911ms

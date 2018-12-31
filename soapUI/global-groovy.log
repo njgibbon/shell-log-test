@@ -1,0 +1,162 @@
+2018-12-31 00:11:28,552 INFO  [log] Test 1 - Log Extraction
+2018-12-31 00:11:28,552 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI
+2018-12-31 00:11:28,558 INFO  [log] [/Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/extractLog.sh, 001, /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI]
+2018-12-31 00:11:28,626 INFO  [log] id to get extract 001
+ID Line Number is:  3
+
+Start Line Number is:  2
+
+End Line Number is:  7
+This is the number of lines after the Start line number.
+
+Log Extract is: 
+START LOG TYPE
+ID 001
+EVENT A
+EVENT B
+EVENT C
+RESULT SUCCESS
+END LOG TYPE
+
+
+2018-12-31 00:11:28,627 INFO  [log] 
+2018-12-31 00:11:28,654 INFO  [log] Test 1 - Assertion Against Log
+2018-12-31 00:11:28,654 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI
+2018-12-31 00:11:28,654 INFO  [log] [/Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/assertAgainstLog.sh, SUCCESS, /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI]
+2018-12-31 00:11:28,675 INFO  [log] 0
+2018-12-31 00:11:28,675 INFO  [log] String to search for SUCCESS
+string matches =  1
+1
+
+2018-12-31 00:11:28,676 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/assertAgainstLog.sh: line 13: 1: command not found
+
+2018-12-31 00:11:28,707 INFO  [log] Test 1 - Log Extraction
+2018-12-31 00:11:28,708 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI
+2018-12-31 00:11:28,709 INFO  [log] [/Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/extractLog.sh, 002, /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI]
+2018-12-31 00:11:28,763 INFO  [log] id to get extract 002
+ID Line Number is:  11
+
+Start Line Number is:  10
+
+End Line Number is:  7
+This is the number of lines after the Start line number.
+
+Log Extract is: 
+START LOG TYPE
+ID 002
+EVENT A
+EVENT B
+EVENT C
+RESULT SUCCESS
+END LOG TYPE
+
+
+2018-12-31 00:11:28,764 INFO  [log] 
+2018-12-31 00:11:28,781 INFO  [log] Test 1 - Assertion Against Log
+2018-12-31 00:11:28,781 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI
+2018-12-31 00:11:28,781 INFO  [log] [/Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/assertAgainstLog.sh, SUCCESS, /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI]
+2018-12-31 00:11:28,799 INFO  [log] 0
+2018-12-31 00:11:28,799 INFO  [log] String to search for SUCCESS
+string matches =  1
+1
+
+2018-12-31 00:11:28,800 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/assertAgainstLog.sh: line 13: 1: command not found
+
+2018-12-31 00:11:28,818 INFO  [log] Test 1 - Log Extraction
+2018-12-31 00:11:28,818 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI
+2018-12-31 00:11:28,818 INFO  [log] [/Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/extractLog.sh, 004, /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI]
+2018-12-31 00:11:28,868 INFO  [log] id to get extract 004
+ID Line Number is:  26
+
+Start Line Number is:  25
+
+End Line Number is:  7
+This is the number of lines after the Start line number.
+
+Log Extract is: 
+START LOG TYPE
+ID 004
+EVENT A
+EVENT B
+VALIDATION ERROR
+RESULT FAILURE
+END LOG TYPE
+
+
+2018-12-31 00:11:28,868 INFO  [log] 
+2018-12-31 00:11:28,888 INFO  [log] Test 1 - Assertion Against Log
+2018-12-31 00:11:28,888 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI
+2018-12-31 00:11:28,888 INFO  [log] [/Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/assertAgainstLog.sh, SUCCESS, /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI]
+2018-12-31 00:11:28,910 INFO  [log] 1
+2018-12-31 00:11:28,910 INFO  [log] String to search for SUCCESS
+string matches =  0
+0
+TEST FAILED
+
+2018-12-31 00:11:28,910 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/assertAgainstLog.sh: line 13: 0: command not found
+
+2018-12-31 00:11:28,947 INFO  [log] Test 1 - Log Extraction
+2018-12-31 00:11:28,948 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI
+2018-12-31 00:11:28,948 INFO  [log] [/Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/extractLog.sh, 004, /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI]
+2018-12-31 00:11:28,990 INFO  [log] id to get extract 004
+ID Line Number is:  26
+
+Start Line Number is:  25
+
+End Line Number is:  7
+This is the number of lines after the Start line number.
+
+Log Extract is: 
+START LOG TYPE
+ID 004
+EVENT A
+EVENT B
+VALIDATION ERROR
+RESULT FAILURE
+END LOG TYPE
+
+
+2018-12-31 00:11:28,990 INFO  [log] 
+2018-12-31 00:11:29,004 INFO  [log] Test 1 - Assertion Against Log
+2018-12-31 00:11:29,005 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI
+2018-12-31 00:11:29,005 INFO  [log] [/Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/assertAgainstLog.sh, SUCCESS, /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI]
+2018-12-31 00:11:29,027 INFO  [log] 1
+2018-12-31 00:11:29,028 INFO  [log] String to search for SUCCESS
+string matches =  0
+0
+TEST FAILED
+
+2018-12-31 00:11:29,028 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/assertAgainstLog.sh: line 13: 0: command not found
+
+2018-12-31 00:11:29,052 INFO  [log] Test 1 - Log Extraction
+2018-12-31 00:11:29,052 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI
+2018-12-31 00:11:29,052 INFO  [log] [/Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/extractLog.sh, 005, /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI]
+2018-12-31 00:11:29,093 INFO  [log] id to get extract 005
+ID Line Number is:  34
+
+Start Line Number is:  33
+
+End Line Number is:  7
+This is the number of lines after the Start line number.
+
+Log Extract is: 
+START LOG TYPE
+ID 005
+EVENT A
+EVENT B
+EVENT C
+RESULT SUCCESS
+END LOG TYPE
+
+
+2018-12-31 00:11:29,094 INFO  [log] 
+2018-12-31 00:11:29,113 INFO  [log] Test 1 - Assertion Against Log
+2018-12-31 00:11:29,113 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI
+2018-12-31 00:11:29,113 INFO  [log] [/Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/assertAgainstLog.sh, SUCCESS, /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI]
+2018-12-31 00:11:29,130 INFO  [log] 0
+2018-12-31 00:11:29,131 INFO  [log] String to search for SUCCESS
+string matches =  1
+1
+
+2018-12-31 00:11:29,131 INFO  [log] /Users/nicholas.j.gibbon/Documents/me/git/shell-log-test/soapUI/assertAgainstLog.sh: line 13: 1: command not found
+

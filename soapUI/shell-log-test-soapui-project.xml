@@ -4,6 +4,31 @@ def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
 def projectDir = groovyUtils.projectPath
 
 //log where we are
+log.info( "Test 1 - Log Extraction")
+log.info(projectDir)
+
+//Set Up
+def assertAgainstLogCmd;
+def p;
+
+//prepare statement to execute
+logExtractCmd = [projectDir+'/extractLog.sh', "001", projectDir]
+
+log.info (logExtractCmd)
+
+//execute statement
+p = logExtractCmd.execute()
+p.waitForOrKill(10000)
+
+//clear up
+log.info (p.in.text)
+log.info (p.err.text)
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="GroovyScript2" id="87b67fc4-587c-45e5-ac7f-81133975f79b"><con:settings/><con:config><script>//find the project directory so we can path relaitvely
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+
+//log where we are
 log.info( "Test 1 - Assertion Against Log")
 log.info(projectDir)
 
@@ -30,7 +55,200 @@ log.info (p.err.text)
 
 //assert
 assert pExitValue == 0
-</script></con:config></con:testStep><con:testStep type="groovy" name="GroovyScript2" id="87b67fc4-587c-45e5-ac7f-81133975f79b"><con:settings/><con:config><script>//find the project directory so we can path relaitvely
+</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="2f4ec214-b88b-4a30-8d4d-a114802903a2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 2" searchProperties="true"><con:settings/><con:testStep type="groovy" name="GroovyScript1" id="e94a076c-3fa8-4f18-b9f0-76f4e03c8409"><con:settings/><con:config><script>//find the project directory so we can path relaitvely
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+
+//log where we are
+log.info( "Test 1 - Log Extraction")
+log.info(projectDir)
+
+//Set Up
+def assertAgainstLogCmd;
+def p;
+
+//prepare statement to execute
+logExtractCmd = [projectDir+'/extractLog.sh', "002", projectDir]
+
+log.info (logExtractCmd)
+
+//execute statement
+p = logExtractCmd.execute()
+p.waitForOrKill(10000)
+
+//clear up
+log.info (p.in.text)
+log.info (p.err.text)
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="GroovyScript2" id="a5e3b45b-8016-4e0c-8de7-8c3648b3be96"><con:settings/><con:config><script>//find the project directory so we can path relaitvely
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+
+//log where we are
+log.info( "Test 1 - Assertion Against Log")
+log.info(projectDir)
+
+//Set Up
+def result = ""
+def assertAgainstLogCmd;
+def p;
+def pExitValue;
+
+//prepare statement to execute
+assertAgainstLogCmd = [projectDir+'/assertAgainstLog.sh', "SUCCESS", projectDir]
+
+log.info (assertAgainstLogCmd)
+
+//execute statement
+p = assertAgainstLogCmd.execute()
+p.waitForOrKill(10000)
+
+//clear up
+pExitValue = p.exitValue();
+log.info(pExitValue);
+log.info (p.in.text)
+log.info (p.err.text)
+
+//assert
+assert pExitValue == 0
+</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="54c2b105-3df5-4eba-bede-63a56ef99c92" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 3" searchProperties="true"><con:settings/><con:testStep type="groovy" name="GroovyScript1" id="71b855a9-1284-4beb-a88d-d9fe76b9d216"><con:settings/><con:config><script>//find the project directory so we can path relaitvely
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+
+//log where we are
+log.info( "Test 1 - Log Extraction")
+log.info(projectDir)
+
+//Set Up
+def assertAgainstLogCmd;
+def p;
+
+//prepare statement to execute
+logExtractCmd = [projectDir+'/extractLog.sh', "004", projectDir]
+
+log.info (logExtractCmd)
+
+//execute statement
+p = logExtractCmd.execute()
+p.waitForOrKill(10000)
+
+//clear up
+log.info (p.in.text)
+log.info (p.err.text)
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="GroovyScript2" id="dd3b8873-56ed-40bb-9de7-99fdac85de65"><con:settings/><con:config><script>//find the project directory so we can path relaitvely
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+
+//log where we are
+log.info( "Test 1 - Assertion Against Log")
+log.info(projectDir)
+
+//Set Up
+def result = ""
+def assertAgainstLogCmd;
+def p;
+def pExitValue;
+
+//prepare statement to execute
+assertAgainstLogCmd = [projectDir+'/assertAgainstLog.sh', "SUCCESS", projectDir]
+
+log.info (assertAgainstLogCmd)
+
+//execute statement
+p = assertAgainstLogCmd.execute()
+p.waitForOrKill(10000)
+
+//clear up
+pExitValue = p.exitValue();
+log.info(pExitValue);
+log.info (p.in.text)
+log.info (p.err.text)
+
+//assert
+assert pExitValue == 0
+</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="85700b72-cf6b-4548-b57e-4d2444c37881" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 4" searchProperties="true"><con:settings/><con:testStep type="groovy" name="GroovyScript1" id="391170a6-adb4-4107-a78b-06b7818ecbed"><con:settings/><con:config><script>//find the project directory so we can path relaitvely
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+
+//log where we are
+log.info( "Test 1 - Log Extraction")
+log.info(projectDir)
+
+//Set Up
+def assertAgainstLogCmd;
+def p;
+
+//prepare statement to execute
+logExtractCmd = [projectDir+'/extractLog.sh', "004", projectDir]
+
+log.info (logExtractCmd)
+
+//execute statement
+p = logExtractCmd.execute()
+p.waitForOrKill(10000)
+
+//clear up
+log.info (p.in.text)
+log.info (p.err.text)
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="GroovyScript2" id="504ec36e-dee2-40f8-9f34-9f89209703b8"><con:settings/><con:config><script>//find the project directory so we can path relaitvely
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+
+//log where we are
+log.info( "Test 1 - Assertion Against Log")
+log.info(projectDir)
+
+//Set Up
+def result = ""
+def assertAgainstLogCmd;
+def p;
+def pExitValue;
+
+//prepare statement to execute
+assertAgainstLogCmd = [projectDir+'/assertAgainstLog.sh', "SUCCESS", projectDir]
+
+log.info (assertAgainstLogCmd)
+
+//execute statement
+p = assertAgainstLogCmd.execute()
+p.waitForOrKill(10000)
+
+//clear up
+pExitValue = p.exitValue();
+log.info(pExitValue);
+log.info (p.in.text)
+log.info (p.err.text)
+
+//assert
+assert pExitValue == 0
+</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="f2a0e793-534a-49bf-8bb0-0523da3070d4" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 5" searchProperties="true"><con:settings/><con:testStep type="groovy" name="GroovyScript1" id="ba792767-4c72-444e-b0ec-05f8e20795ae"><con:settings/><con:config><script>//find the project directory so we can path relaitvely
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+
+//log where we are
+log.info( "Test 1 - Log Extraction")
+log.info(projectDir)
+
+//Set Up
+def assertAgainstLogCmd;
+def p;
+
+//prepare statement to execute
+logExtractCmd = [projectDir+'/extractLog.sh', "005", projectDir]
+
+log.info (logExtractCmd)
+
+//execute statement
+p = logExtractCmd.execute()
+p.waitForOrKill(10000)
+
+//clear up
+log.info (p.in.text)
+log.info (p.err.text)
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="GroovyScript2" id="4d65f858-5443-4e9b-90ed-8461066f4680"><con:settings/><con:config><script>//find the project directory so we can path relaitvely
 def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
 def projectDir = groovyUtils.projectPath
 
